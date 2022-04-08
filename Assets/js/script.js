@@ -17,22 +17,54 @@ function displayDay() {
     // }, 1000);
     colorTime();
     updateOnRefresh();
+    getId();
 };
 
 // function to create page?
 
+// trying to get the id's in array form 
+function getId() {
+    var className = document.getElementsByClassName("checkTime");
+    var classNameCount = className.length;
+    var id = new Array();
+    for(var i = 0; i < classnameCount; i++){
+        id[i] = className[i].id;
+    }
+}
+console.log(className);
+console.log(id);
+
 // change textarea based on time 
 function colorTime() {
     rightNow = 9; //moment().format("H");
-    var time9 = document.querySelector("#time9");
-    var time10 = document.querySelector("#time10");
-    var time11 = document.querySelector("#time11");
-    var time12 = document.querySelector("#time12");
-    var time13 = document.querySelector("#time1");
-    var time14 = document.querySelector("#time2");
-    var time15 = document.querySelector("#time3");
-    var time16 = document.querySelector("#time4");
-    var time17 = document.querySelector("#time5");
+
+    var checkTime = document.getElementsByClassName("checkTime");
+
+    
+
+    if (rightNow == checkTime) {
+        checkTime.classList.add("present");
+    } else if (rightNow > checkTime) {
+        checkTime.classList.remove("present");
+        checkTime.classList.add("future");
+    } else if (rightNow < checkTime) {
+        checkTime.classList.remove("future");
+        checkTime.classList.add("past");
+    }
+
+     console.log(checkTime);
+
+
+
+    // var time9 = document.querySelector("#time9");
+    // var time10 = document.querySelector("#time10");
+    // var time11 = document.querySelector("#time11");
+    // var time12 = document.querySelector("#time12");
+    // var time13 = document.querySelector("#time1");
+    // var time14 = document.querySelector("#time2");
+    // var time15 = document.querySelector("#time3");
+    // var time16 = document.querySelector("#time4");
+    // var time17 = document.querySelector("#time5");
 
 
 
