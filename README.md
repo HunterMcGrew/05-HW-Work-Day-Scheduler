@@ -12,6 +12,10 @@ No Installation Necessary
 
 I would like to add a button to clear all stored events for the day. 
 
+## License
+
+MIT
+
 ## Created By
 
 [Hunter McGrew](https://github.com/HunterMcGrew)
