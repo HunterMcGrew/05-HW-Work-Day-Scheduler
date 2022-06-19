@@ -2,7 +2,7 @@
 
 This is a simple Day Planner via Web Browser. 
 
-![image]()
+![image](https://github.com/HunterMcGrew/05-HW-Work-Day-Scheduler/blob/main/work_day_scheduler.PNG?raw=true)
 
 ## Installation
 
